@@ -1,0 +1,24 @@
+{
+  "appId": "com.xx.app",
+  "productName": "xx",
+  "win": {
+    "icon": "./public/yk.jpg", 
+    "artifactName": "${productName}.${ext}"
+  },
+  "files": ["dist/**/*", "dist-electron/**/*"],
+  "directories": {
+      "output": "release"
+  },
+  "nsis": {
+    "oneClick": false, 
+    "allowElevation": true, 
+    "allowToChangeInstallationDirectory": true, 
+    "createDesktopShortcut": true,   
+    "createStartMenuShortcut": true,  
+    "runAfterFinish": true,   
+    "installerIcon": "./public/favicon.ico",    
+    "uninstallerIcon": "./public/favicon.ico",   
+    "installerHeaderIcon": "./public/favicon.ico",   
+    "shortcutName": "xx"    
+  }
+}
